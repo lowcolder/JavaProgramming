@@ -1,7 +1,7 @@
 package JavaProgramming.vehicle;
 
 
-public class VeiculoCarga extends Automoveis {
+public class VeiculoCarga extends Veiculo {
     private int numeroEixos;
     private double carga;
     private String tipoCarroceria;

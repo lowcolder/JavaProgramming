@@ -1,12 +1,13 @@
 package JavaProgramming.vehicle;
 
 
-public class VeiculoPasseio extends Automoveis{
+public class VeiculoPasseio extends Veiculo{
     private int qtdPortas;
     private boolean arCondicionado;
     private String tipoCambio;
     private String tipoDirecao;
 
+   // Metodo construtor de veículo passeio
     public VeiculoPasseio(int qtdPortas, boolean arCondicionado, String tipoCambio, String tipoDirecao, String marca, String modelo, int dia, int mes, int ano, String cor, float preco) {
         super(marca, modelo, dia, mes, ano, cor, preco);
         this.qtdPortas = qtdPortas;

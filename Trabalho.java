@@ -43,5 +43,4 @@ public class Trabalho {
             }
         } while (!senha.equals(entrada));
     }
-    
 }

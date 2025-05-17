@@ -2,19 +2,19 @@ package JavaProgramming.vehicle;
 
 import java.util.Calendar;
 
-public abstract class Automoveis {
+public abstract class Veiculo {
     private String cor;
     private String marca;
     private String modelo;
     private Calendar dataFabricacao;
     private float preco;
 
-    public Automoveis(String marca, String modelo,int dia, int mes, int ano, String cor, float preco) {
+    public Veiculo(String marca, String modelo,int dia, int mes, int ano, String cor, float preco) {
+        this.cor = cor;
         this.marca = marca;
         this.modelo = modelo;
         this.dataFabricacao = Calendar.getInstance();
         this.dataFabricacao.set(dia,mes + 1,ano);
-        this.cor = cor;
         this.preco = preco;
     }
     public String getMarca() {
