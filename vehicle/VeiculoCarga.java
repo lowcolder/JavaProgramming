@@ -1,4 +1,5 @@
-package TrabalhoJava;
+package JavaProgramming.vehicle;
+
 
 public class VeiculoCarga extends Automoveis {
     private int numeroEixos;
@@ -14,7 +15,7 @@ public class VeiculoCarga extends Automoveis {
     }
 
     public int getNumeroEixos() {
-        return numeroEixos;
+        return this.numeroEixos;
     }
 
     public void setNumeroEixos(int numeroEixos) {
@@ -22,7 +23,7 @@ public class VeiculoCarga extends Automoveis {
     }
 
     public double getCarga() {
-        return carga;
+        return this.carga;
     }
 
     public void setCarga(double carga) {
@@ -30,7 +31,7 @@ public class VeiculoCarga extends Automoveis {
     }
 
     public String getTipoCarroceria() {
-        return tipoCarroceria;
+        return this.tipoCarroceria;
     }
 
     public void setTipoCarroceria(String tipoCarroceria) {
@@ -39,7 +40,7 @@ public class VeiculoCarga extends Automoveis {
 
     @Override
     public String toString() {
-        return "numeroEixos:" + numeroEixos + ", carga:" + carga + ", tipoCarroceria:" + tipoCarroceria ;
+        return "numeroEixos:" + this.numeroEixos + ", carga:" + this.carga + ", tipoCarroceria:" + this.tipoCarroceria ;
     }
     
 }

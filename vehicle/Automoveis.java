@@ -1,12 +1,12 @@
-package TrabalhoJava;
+package JavaProgramming.vehicle;
 
 import java.util.Calendar;
 
 public abstract class Automoveis {
+    private String cor;
     private String marca;
     private String modelo;
     private Calendar dataFabricacao;
-    private String cor;
     private float preco;
 
     public Automoveis(String marca, String modelo,int dia, int mes, int ano, String cor, float preco) {
@@ -18,7 +18,7 @@ public abstract class Automoveis {
         this.preco = preco;
     }
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public void setMarca(String marca) {
@@ -26,7 +26,7 @@ public abstract class Automoveis {
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public void setModelo(String modelo) {
@@ -34,15 +34,13 @@ public abstract class Automoveis {
     }
 
     public Calendar getDataFabricacao() {
-        return dataFabricacao;
+        return this.dataFabricacao;
     }
 
-    public void setDataFabricacao(int dia, int mes, int ano) {
-        this.dataFabricacao.set(dia,mes,ano);
-    }
+    public void setDataFabricacao(int dia, int mes, int ano) { this.dataFabricacao.set(ano,mes-1,dia);}
 
     public String getCor() {
-        return cor;
+        return this.cor;
     }
 
     public void setCor(String cor) {
@@ -50,7 +48,7 @@ public abstract class Automoveis {
     }
 
     public float getPreco() {
-        return preco;
+        return this.preco;
     }
 
     public void setPreco(float preco) {
@@ -59,9 +57,8 @@ public abstract class Automoveis {
 
     @Override
     public String toString() {
-        int dia = dataFabricacao.get(Calendar.DAY_OF_MONTH);
-        int mes =  dataFabricacao.get(Calendar.MONTH) + 1;
-        return "marca:" + marca + ", modelo:" + modelo + ", dataFabricacao:" + (dia<10? "0":"") + dia +(mes<10? "0": "") + mes + dataFabricacao + ", cor:" + cor + ", preco:" + preco;
+        int dia = this.dataFabricacao.get(Calendar.DAY_OF_MONTH);
+        int mes =  this.dataFabricacao.get(Calendar.MONTH) + 1;
+        return "marca:" + this.marca + ", modelo:" + this.modelo + ", dataFabricacao:" + (dia<10? "0":"") + dia +(mes<10? "0": "") + mes + this.dataFabricacao + ", cor:" + this.cor + ", preco:" + this.preco;
     }
-    
 }

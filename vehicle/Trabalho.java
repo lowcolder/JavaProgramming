@@ -1,4 +1,4 @@
-package TrabalhoJava;
+package JavaProgramming.vehicle;
 
 // importação das bibliotecas
 import java.util.Calendar; 
@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 /*
 ===============================================================================
-alunos: Davi henrique Garcia Araujo                              data(04/04/2025)
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
         Layla Pimenta de Melo
 Professor: Alessandro
 Desc: 
@@ -17,7 +17,7 @@ public class Trabalho {
     public static void main(String[] args) {
         String nome, entrada;
         Calendar dataAtual = Calendar.getInstance();
-        // define as variaveis do dia atual e o nome do usuario
+        // Define as variaveis do dia atual e o nome do usuario
         nome = JOptionPane.showInputDialog("Digite seu nome:");
         int d = dataAtual.get(Calendar.DAY_OF_MONTH);
         int m = dataAtual.get(Calendar.MONTH) + 1; // +1 porque janeiro é 0

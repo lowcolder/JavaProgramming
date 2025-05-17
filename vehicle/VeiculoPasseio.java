@@ -1,4 +1,4 @@
-package TrabalhoJava;
+package JavaProgramming.vehicle;
 
 
 public class VeiculoPasseio extends Automoveis{
@@ -15,16 +15,14 @@ public class VeiculoPasseio extends Automoveis{
         this.tipoDirecao = tipoDirecao;
     }
 
-    public int getQtdPortas() {
-        return qtdPortas;
-    }
+    public int getQtdPortas() { return this.qtdPortas;}
 
     public void setQtdPortas(int qtdPortas) {
         this.qtdPortas = qtdPortas;
     }
 
-    public boolean isArCondicionado() {
-        return arCondicionado;
+    public boolean getArCondicionado() {
+        return this.arCondicionado;
     }
 
     public void setArCondicionado(boolean arCondicionado) {
@@ -32,7 +30,7 @@ public class VeiculoPasseio extends Automoveis{
     }
 
     public String getTipoCambio() {
-        return tipoCambio;
+        return this.tipoCambio;
     }
 
     public void setTipoCambio(String tipoCambio) {
@@ -40,7 +38,7 @@ public class VeiculoPasseio extends Automoveis{
     }
 
     public String getTipoDirecao() {
-        return tipoDirecao;
+        return this.tipoDirecao;
     }
 
     public void setTipoDirecao(String tipoDirecao) {
@@ -49,6 +47,6 @@ public class VeiculoPasseio extends Automoveis{
 
     @Override
     public String toString() {
-        return "qtdPortas=" + qtdPortas + ", arCondicionado=" + arCondicionado + ", tipoCambio=" + tipoCambio + ", tipoDirecao=" + tipoDirecao;
+        return "qtdPortas=" + this.qtdPortas + ", arCondicionado=" + this.arCondicionado + ", tipoCambio=" + this.tipoCambio + ", tipoDirecao=" + this.tipoDirecao;
     }
 }
