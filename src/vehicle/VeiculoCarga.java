@@ -1,4 +1,4 @@
-package JavaProgramming.vehicle;
+package vehicle;
 
 // Subclasse de nivel 1 da superclasse Veiculo
 public class VeiculoCarga extends Veiculo {

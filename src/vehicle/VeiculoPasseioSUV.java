@@ -1,4 +1,4 @@
-package JavaProgramming.vehicle;
+package vehicle;
 
 // Subclasse de nivel 2 da superclasse Veiculo
 // Subclasse de nivel 1 da subclasse VeiculoPasseio
@@ -54,7 +54,7 @@ public class VeiculoPasseioSUV extends VeiculoPasseio {
 
     @Override
     public String toString() {
-        return super.toString() + "Freios ABS: " + this.freioABS + "Quantidade de Airbags: " + this.qtdAirbags + "Capacidade de Passageiros: " + this.capacidadePassageiros + "Tipo de Combustivel: " + this.tipoCombustivel;
+        return super.toString() + "\nFreios ABS: " + this.freioABS + "\nQuantidade de Airbags: " + this.qtdAirbags + "\nCapacidade de Passageiros: " + this.capacidadePassageiros + "\nTipo de Combustivel: " + this.tipoCombustivel;
     }
 }
 

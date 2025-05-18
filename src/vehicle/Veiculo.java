@@ -1,4 +1,4 @@
-package JavaProgramming.vehicle;
+package vehicle;
 
 import java.util.Calendar;
 

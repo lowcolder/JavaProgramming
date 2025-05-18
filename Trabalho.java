@@ -1,5 +1,3 @@
-package JavaProgramming.vehicle;
-
 // importação das bibliotecas
 import java.util.Calendar; 
 import javax.swing.JOptionPane;

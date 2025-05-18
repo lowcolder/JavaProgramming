@@ -1,4 +1,4 @@
-package JavaProgramming.vehicle;
+package vehicle;
 
 // Subclasse de nivel 2 da superclasse Veiculo
 // Subclasse de nivel 1 da subclasse VeiculoCarga
