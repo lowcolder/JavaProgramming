@@ -5,15 +5,19 @@ package vehicle;
 public class VeiculoCargaCarreta extends VeiculoCarga {
     boolean articulada;
     boolean rastreamentoGPS;
+    boolean refrigerada;
+    double comprimentoTotal;
     int qtdCompartimentos;
     String tipoCarga;
 
     // Metodo construtor de VeiculoCarga
-    public VeiculoCargaCarreta(boolean articulada, boolean rastreamentoGPS, int qtdCompartimentos, String tipoCarga,int numeroEixos, double carga, String tipoCarroceria, String marca, String modelo, int dia, int mes, int ano, String cor, float preco) {
+    public VeiculoCargaCarreta(boolean articulada, boolean rastreamentoGPS, boolean refrigerada, double comprimentoTotal, int qtdCompartimentos, String tipoCarga,int numeroEixos, double carga, String tipoCarroceria, String marca, String modelo, int dia, int mes, int ano, String cor, float preco) {
         // Chama o metodo construtor da subclasse VeiculoCarga
         super(numeroEixos, carga, tipoCarroceria, marca, modelo, dia, mes, ano, cor, preco);
         this.articulada = articulada;
         this.rastreamentoGPS = rastreamentoGPS;
+        this.refrigerada = refrigerada;
+        this.comprimentoTotal = comprimentoTotal;
         this.qtdCompartimentos = qtdCompartimentos;
         this.tipoCarga = tipoCarga;
     }
@@ -25,6 +29,14 @@ public class VeiculoCargaCarreta extends VeiculoCarga {
 
     public boolean getRastreamentoGPS() {
         return this.rastreamentoGPS;
+    }
+
+    public boolean getRefrigerada() {
+        return this.refrigerada;
+    }
+
+    public double getComprimentoTotal() {
+        return this.comprimentoTotal;
     }
 
     public int getQtdCompartimentos() {
@@ -44,6 +56,14 @@ public class VeiculoCargaCarreta extends VeiculoCarga {
         this.rastreamentoGPS = rastreamentoGPS;
     }
 
+    public void setRefrigerada(boolean refrigerada) {
+        this.refrigerada = refrigerada;
+    }
+
+    public void setComprimentoTotal(double comprimentoTotal) {
+        this.comprimentoTotal = comprimentoTotal;
+    }
+
     public void setQtdCompartimentos(int qtdCompartimentos) {
         this.qtdCompartimentos = qtdCompartimentos;
     }
@@ -54,6 +74,6 @@ public class VeiculoCargaCarreta extends VeiculoCarga {
 
     @Override
     public String toString() {
-        return super.toString() + "\nArticulada: " + this.articulada + "\nRastreamento por GPS: " + this.rastreamentoGPS + "\nQuantidade de Compartimentos: " + this.qtdCompartimentos + "\nTipos de Carga: " + this.tipoCarga;
+        return super.toString() + "\nArticulada: " + this.articulada + "\nRastreamento por GPS: " + this.rastreamentoGPS + "\nRefrigerada: " + this.refrigerada + "Comprimento Total: " + this.comprimentoTotal + "\nQuantidade de Compartimentos: " + this.qtdCompartimentos + "\nTipos de Carga: " + this.tipoCarga;
     }
 }
