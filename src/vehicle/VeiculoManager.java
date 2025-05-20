@@ -2,9 +2,8 @@ package vehicle;
 
 import java.util.ArrayList;
 
-
 public class VeiculoManager {
-    private ArrayList<Veiculo> veiculos = new ArrayList<>();
+    private ArrayList<Veiculo> veiculos = new ArrayList<Veiculo>();
 
     public void adicionarVeiculo(Veiculo v) {
         veiculos.add(v);
@@ -43,6 +42,7 @@ public class VeiculoManager {
     }
 
     // Método de teste
+    /*
     public static void main(String[] args) {
         VeiculoManager manager = new VeiculoManager();
 
@@ -58,4 +58,5 @@ public class VeiculoManager {
         manager.removerVeiculo(0);
         manager.listarVeiculos();
     }
+    */
 }

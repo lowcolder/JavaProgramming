@@ -1,3 +1,5 @@
+package main;
+
 /*
 ===============================================================================
 alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
@@ -12,8 +14,8 @@ Desc:
 
 //Importações de bibliotecas e classes
 import vehicle.*;
-
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
 
@@ -30,9 +32,9 @@ public class Trabalho {
         do {
             entrada = JOptionPane.showInputDialog("Digite a sua senha:");
             if (!senha.equals(entrada)) {
-                int cont = Integer.parseInt(JOptionPane.showInputDialog(
+                int erroContinuar = Integer.parseInt(JOptionPane.showInputDialog(
                     "Senha incorreta.\nDeseja tentar novamente?\n[1] Sim | [0] Não"));
-                if (cont == 0) {
+                if (erroContinuar == 0) {
                     JOptionPane.showMessageDialog(null, "Encerrando o programa.");
                     System.exit(0);
                 }

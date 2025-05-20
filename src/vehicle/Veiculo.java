@@ -16,7 +16,7 @@ public abstract class Veiculo {
         this.marca = marca;
         this.modelo = modelo;
         this.dataFabricacao = Calendar.getInstance();
-        this.dataFabricacao.set(dia,mes + 1,ano);
+        this.dataFabricacao.set(ano, mes - 1, dia);
         this.preco = preco;
     }
 
@@ -66,6 +66,9 @@ public abstract class Veiculo {
     public String toString() {
         int dia = this.dataFabricacao.get(Calendar.DAY_OF_MONTH);
         int mes =  this.dataFabricacao.get(Calendar.MONTH) + 1;
-        return "Marca:" + this.marca + "\nModelo:" + this.modelo + "\nData de Fabricacao:" + (dia<10? "0":"") + dia +(mes<10? "0": "") + mes + this.dataFabricacao + "\nCor:" + this.cor + "\nPreco:" + this.preco;
+        int ano = this.dataFabricacao.get(Calendar.YEAR);
+    
+        String data = String.format("%02d/%02d/%04d", dia, mes, ano);
+        return "Marca: " + this.marca + "\nModelo: " + this.modelo + "\nData de Fabricacao: " + data + "\nCor:" + this.cor + "\nPreco:" + this.preco;
     }
 }
