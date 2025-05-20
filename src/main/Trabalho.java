@@ -15,7 +15,6 @@ Desc:
 //Importações de bibliotecas e classes
 import vehicle.*;
 import javax.swing.JOptionPane;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Scanner;
 
