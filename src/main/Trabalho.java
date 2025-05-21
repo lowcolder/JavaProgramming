@@ -62,7 +62,7 @@ public class Trabalho {
             System.out.println("2 - Adicionar SUV");
             System.out.println("3 - Adicionar carreta de carga");
             System.out.println("4 - Listar veículos");
-            System.out.println("5 - Atualizar preço de um veículo");
+            System.out.println("5 - Atualizar características de um veículo");
             System.out.println("6 - Remover veículo");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
