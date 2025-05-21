@@ -1,5 +1,15 @@
 package cpf;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe CPF valida um CPF, verificando se os dígitos verificadores estão corretos.
+===============================================================================
+*/
 public class CPF {
    // Valida um digito verificador do cpf
    public boolean validaDigito(String cpfNumerico, int posicaoDigito) {

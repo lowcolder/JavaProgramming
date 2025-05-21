@@ -8,12 +8,15 @@ alunos: Davi Henrique Garcia Araujo                              data(04/04/2025
         Rafael Albino Ferreira
 
 Professor: Alessandro
-Desc:
+Desc: A classe principal do sistema de gerenciamento de veículos, que
+      implementa um menu interativo para futuramente adicionar, listar, atualizar e remover
+      veículos usando métodos criados em VeiculoManager.java.
 ===============================================================================
 */
 
 //Importações de bibliotecas e classes
 import vehicle.*;
+import cpf.*;
 import javax.swing.JOptionPane;
 import java.util.Calendar;
 import java.util.Scanner;
@@ -26,8 +29,14 @@ public class Trabalho {
         int d = dataAtual.get(Calendar.DAY_OF_MONTH);
         int m = dataAtual.get(Calendar.MONTH) + 1;
         int a = dataAtual.get(Calendar.YEAR);
+        String cpf = JOptionPane.showInputDialog("Digite seu CPF:");
+        CPF cpfObj = new CPF();
+        if (!cpfObj.validaCPF(cpf)) {
+            JOptionPane.showMessageDialog(null, "CPF inválido. Encerrando o programa.");
+            System.exit(0);
+        }
         String senha = nome + (d < 10 ? "0" : "") + d + (m < 10 ? "0" : "") + m + a;
-
+        
         do {
             entrada = JOptionPane.showInputDialog("Digite a sua senha:");
             if (!senha.equals(entrada)) {
@@ -197,11 +206,24 @@ public class Trabalho {
                     break;
 
                 case 5:
-                    System.out.print("Índice do veículo a atualizar: ");
-                    int indexAtualizar = sc.nextInt();
-                    System.out.print("Novo preço: ");
-                    float novoPreco = sc.nextFloat();
-                    manager.atualizarPreco(indexAtualizar, novoPreco);
+                    System.out.print("Deseja atualizar o preço de um veículo?\n[1] SIm | [0] Não");
+                    int opcaoAtualizar = sc.nextInt();
+                    if(opcaoAtualizar == 1){
+                        System.out.print("Índice do veículo a atualizar: ");
+                        int indexAtualizar = sc.nextInt();
+                        System.out.print("Novo preço: ");
+                        float novoPreco = sc.nextFloat();
+                        manager.atualizarCaracteristicas(indexAtualizar, novoPreco);
+                    }
+                    System.out.print("Deseja atualizar a cor do veículo?\n[1] Sim | [0] Não");
+                    int opcaoAtualizarCor = sc.nextInt();
+                    if(opcaoAtualizarCor == 1){
+                        System.out.print("Índice do veículo a atualizar: ");
+                        int indexAtualizar = sc.nextInt();
+                        System.out.print("Nova cor: ");
+                        String novaCor = sc.nextLine();
+                        manager.atualizarCaracteristicas(indexAtualizar, novaCor);
+                    }
                     break;
 
                 case 6:

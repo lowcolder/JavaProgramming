@@ -1,5 +1,19 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe VeiculoManager gerencia os veiculos cadastrados, permitindo adicionar, listar,
+      atualizar e remover veiculos. Ela utiliza um ArrayList para armazenar os veiculos e fornece
+      metodos para manipular esses veiculos. A classe possui metodos para adicionar um veiculo,
+      listar todos os veiculos, atualizar o preco de um veiculo especifico e remover um veiculo
+      de um indice especifico.
+===============================================================================
+*/
 import java.util.ArrayList;
 
 public class VeiculoManager {
@@ -23,10 +37,19 @@ public class VeiculoManager {
         }
     }
 
-    public void atualizarPreco(int index, float novoPreco) {
+    public void atualizarCaracteristicas(int index, float novoPreco) {
         if (index >= 0 && index < veiculos.size()) {
             veiculos.get(index).setPreco(novoPreco);
             System.out.println("Preço atualizado.");
+        } else {
+            System.out.println("Índice inválido.");
+        }
+    }
+
+    public void atualizarCaracteristicas(int index, String novaCor) {
+        if (index >= 0 && index < veiculos.size()) {
+            veiculos.get(index).setCor(novaCor);
+            System.out.println("Cor atualizada.");
         } else {
             System.out.println("Índice inválido.");
         }
@@ -41,22 +64,4 @@ public class VeiculoManager {
         }
     }
 
-    // Método de teste
-    /*
-    public static void main(String[] args) {
-        VeiculoManager manager = new VeiculoManager();
-
-        VeiculoPasseio vp = new VeiculoPasseio(
-            4, true, "Automático", "Hidráulica",
-            "Toyota", "Corolla", 10, 4, 2020, "Preto", 90000f
-        );
-
-        manager.adicionarVeiculo(vp);
-        manager.listarVeiculos();
-        manager.atualizarPreco(0, 85000f);
-        manager.listarVeiculos();
-        manager.removerVeiculo(0);
-        manager.listarVeiculos();
-    }
-    */
 }

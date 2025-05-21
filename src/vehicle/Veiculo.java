@@ -1,5 +1,20 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe Veiculo é a superclasse de todas as classes de veiculos.
+       Ela possui atributos comuns a todos os veiculos, como marca, modelo, cor,
+       data de fabricacao e preco. A classe possui um metodo construtor que
+       inicializa esses atributos e metodos getters e setters para cada um deles.
+       O metodo toString() retorna uma representacao em string dos atributos do
+       veiculo.
+===============================================================================
+*/
 import java.util.Calendar;
 
 // Superclasse Veiculo
@@ -62,7 +77,6 @@ public abstract class Veiculo {
         this.preco = preco;
     }
 
-    @Override
     public String toString() {
         int dia = this.dataFabricacao.get(Calendar.DAY_OF_MONTH);
         int mes =  this.dataFabricacao.get(Calendar.MONTH) + 1;

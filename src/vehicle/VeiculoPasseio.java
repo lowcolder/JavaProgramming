@@ -1,5 +1,20 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe VeiculoPasseio é uma subclasse da superclasse Veiculo. Ela
+      possui atributos e metodos especificos para veiculos de passeio, como
+      quantidade de portas, ar condicionado, tipo de cambio e tipo de direcao.
+      A classe possui um metodo construtor que inicializa esses atributos e
+      metodos getters e setters para cada um deles. O metodo toString() retorna
+      uma representacao em string dos atributos do veiculo de passeio.
+===============================================================================
+*/
 // Subclasse de nível 1 da superclasse Veiculo
 public class VeiculoPasseio extends Veiculo{
     private int qtdPortas;

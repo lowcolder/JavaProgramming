@@ -1,5 +1,20 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe VeiculoPasseioSUV representa um veiculo de passeio do tipo SUV, com
+      atributos adicionais como se possui freio ABS, tracao 4x4, altura do solo,
+      quantidade de airbags, capacidade de passageiros e tipo de combustivel.
+      Ela herda as implementacoes da classe VeiculoPasseio, possui getters e setters
+      para receber e modificar informacoes na classe e possui o metodo toString()
+      que disponibiliza as informacoes da classe em forma de texto.
+===============================================================================
+*/
 // Subclasse de nivel 2 da superclasse Veiculo
 // Subclasse de nivel 1 da subclasse VeiculoPasseio
 public class VeiculoPasseioSUV extends VeiculoPasseio {

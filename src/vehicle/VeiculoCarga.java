@@ -1,5 +1,19 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe VeiculoCarga representa um veiculo de carga, que herda da superclasse Veiculo.
+       Ela possui atributos e metodos especificos para veiculos de carga.
+       Os atributos incluem o numero de eixos, a carga e o tipo de carroceria.
+       Os metodos incluem getters e setters para acessar e modificar os atributos,
+       alem de um metodo toString() para representar o objeto como uma string.
+===============================================================================
+*/
 // Subclasse de nivel 1 da superclasse Veiculo
 public class VeiculoCarga extends Veiculo {
     private int numeroEixos;

@@ -1,5 +1,18 @@
 package vehicle;
+/*
+===============================================================================
+alunos: Davi Henrique Garcia Araujo                              data(04/04/2025)
+        Layla Pimenta de Melo
+        Robson Ribeiro Filho
+        Rafael Albino Ferreira
 
+Professor: Alessandro
+Desc: A classe VeiculoCargaCarreta representa um veiculo de carga do tipo carreta, com
+      atributos adicionais como se é articulada, possui rastreamento por GPS,
+      refrigerada, comprimento total, quantidade de compartimentos e tipo de carga.
+      Ela as implementações de VeiculoCarga.
+===============================================================================
+*/
 // Subclasse de nivel 2 da superclasse Veiculo
 // Subclasse de nivel 1 da subclasse VeiculoCarga
 public class VeiculoCargaCarreta extends VeiculoCarga {
